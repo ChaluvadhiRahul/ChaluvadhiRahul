@@ -1,0 +1,38 @@
+letsupgrade
+#include <iostream>
+int main() {
+  // Get the input number from the user.
+  int number;
+  std::cout << "Enter a number: ";
+  std::cin >> number;
+  // Determine whether the number is even or odd.
+  if (number % 2 == 0) {
+    // The number is even.
+    std::cout << "Number is even." << std::endl;
+  } else {
+    // The number is odd.
+    std::cout << "Number is odd." << std::endl;
+  }
+  return 0;
+}
+
+
+The code provided is a C++ program that takes an integer input from the user and then checks whether the input number is even or odd using the modulus operator (%).
+
+Let's go through the code step-by-step:
+
+#include <iostream>: This includes the input/output stream library, which allows the program to use standard input and output operations like std::cout and std::cin.
+
+int main(): This is the main function where the program execution starts.
+
+int number;: This declares an integer variable named number to store the input from the user.
+
+std::cout << "Enter a number: ";: This line prints the message "Enter a number: " to the console, prompting the user to enter a number.
+
+std::cin >> number;: This line reads the user's input from the console and stores it in the variable number.
+
+if (number % 2 == 0) { ... } else { ... }: This is an if-else statement to check if the input number is even or odd. The condition number % 2 == 0 checks if the remainder of number divided by 2 is zero, which means the number is even. If it's true, the program prints "Number is even." Otherwise, it prints "Number is odd."
+
+return 0;: This line indicates that the program has executed successfully and returns 0 to the operating system.
+
+Overall, this program is a simple implementation of checking whether a given number is even or odd. When the program runs, it prompts the user to enter a number, and after the user provides the input, it prints whether the number is even or odd.
